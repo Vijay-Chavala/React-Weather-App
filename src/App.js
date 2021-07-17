@@ -30,7 +30,7 @@ function App() {
           <div className="box"></div>
 
           <div className="container">
-            <h2>Weather App</h2>
+            <h2>Hii Anna Kitoria</h2>
             <div
               className={getStart ? "welcome_page moveLeft" : "welcome_page"}
             >

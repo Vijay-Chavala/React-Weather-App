@@ -26,7 +26,6 @@ section {
     rgb(0, 217, 255) 70%
   );
   filter: blur(200px);
-  max-width: 100%;
 }
 .sun {
   background: url("./images/sun.png") no-repeat center;
