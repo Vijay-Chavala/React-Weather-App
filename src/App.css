@@ -1,38 +1,245 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.blur_section {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 0, 221);
+  background: linear-gradient(
+    45deg,
+    rgb(248, 75, 225) 30%,
+    rgb(0, 217, 255) 70%
+  );
+  filter: blur(200px);
+  max-width: 100%;
+}
+.sun {
+  background: url("./images/sun.png") no-repeat center;
+  opacity: 0.5;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  /* background: red; */
+  animation: rotation 25s infinite linear;
+}
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  40% {
+    -webkit-transform: rotate(180deg);
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0.1;
+  }
+}
+.cloud {
+  position: absolute;
+  opacity: 0.7;
+  animation: movingCloud 40s linear infinite alternate;
+}
+.cloud1 {
+  background: url("./images/cloud-512x512.png") no-repeat center;
+  width: 200px;
+  height: 200px;
+  left: 350px;
+  top: 50px;
+  animation-delay: -3s;
+}
+.cloud2 {
+  background: url("./images/clouds.png") no-repeat center;
+  width: 200px;
+  height: 200px;
+
+  right: 300px;
+  top: 20px;
+  animation-delay: -3s;
+}
+.cloud3 {
+  background: url("./images/cloudssss.png") no-repeat center;
+  width: 600px;
+  height: 600px;
+  left: 40px;
+  top: 80px;
+  animation-delay: -10s;
+}
+.cloud4 {
+  background: url("./images/cloudssss.png") no-repeat center;
+  width: 400px;
+  height: 400px;
+  right: 100px;
+  top: 150px;
+  animation-delay: -12s;
+}
+
+/*clouds animation */
+
+@keyframes movingCloud {
+  0%,
+  100% {
+    transform: translateX(-150px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+.wave {
+  background: url("./images/wave-haikei.svg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: floating 4s linear infinite;
+  background-repeat: repeat-x;
+}
+
+@keyframes floatingv {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.box {
+  background: #fff;
+  height: 500px;
+  width: 500px;
+  margin-right: -300px;
+  display: none;
+}
+.container {
+  background: rgba(225, 255, 225, 0.2);
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  padding-bottom: 30px;
+  max-width: 60%;
+}
+
+.container h2 {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #283f70;
+  margin: 10px 0 20px;
+}
+.welcome_page {
+  transition: 0.2s all ease-in;
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  width: 50%;
+}
+
+.moveLeft {
+  margin-left: -800%;
+}
+.welcome_page .welcome_icon {
+  margin: 0 auto;
+  width: 70%;
+}
+.welcome_page h1 {
+  padding: 10px 0;
+  color: #283f70;
+}
+
+.welcome_page p {
+  color: #1e58d4;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome_page button {
+  width: 90%;
+  background-image: linear-gradient(
+    to right,
+    rgba(26, 41, 128, 0.2) 0%,
+    rgba(0, 255, 251, 0.2) 51%,
+    rgba(26, 41, 128, 0.2) 100%
+  );
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #283f70;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto 0;
+  box-shadow: 0 10px 45px rgba(31, 31, 31, 0.3);
+  border: 1px solid rgba(211, 254, 255, 0.8);
+  border-right: 1px solid rgba(102, 0, 105, 0.123);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+.welcome_page button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.welcome_page img {
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* weather_page */
+.weather_page {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 200%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s all ease-in;
+  width: 100%;
+  display: block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.weather_PageMoveLeft {
+  left: 50%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (orientation: landscape) {
 }

@@ -1,0 +1,135 @@
+/* <a target="_blank" href="https://icons8.com/icon/39461/sunrise">Sunrise</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+
+.weather_report {
+  position: absolute;
+  top: 80px;
+  right: -300%;
+  width: 60%;
+  transform: translate(-50%, 0%);
+  transition: 0.5s all ease-in-out;
+  z-index: 55;
+  text-align: center;
+}
+.weather_report_show {
+  right: 10px;
+}
+.weather_report .temp_img_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0px 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+.weather_icon {
+  width: 80px;
+  height: 80px;
+}
+.weather_report h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  color: #283f70;
+  margin: 6px 0;
+}
+.weather_report h1 span {
+  font-size: 1.5rem;
+}
+.city_name {
+  padding: 10px 0;
+  color: #283f70;
+  font-size: 2rem !important;
+}
+.temp {
+  color: #fff;
+  margin: 0;
+  text-align: left;
+}
+.temp p {
+  color: #1e58d4;
+}
+
+.weather_report h3 {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 0.95rem;
+  color: rgb(255, 255, 255);
+}
+.weather_info_row {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  overflow: hidden;
+}
+.weather_info_row img {
+  width: 40px;
+  height: 40px;
+}
+/* .weather_info_row .col {
+} */
+.weather_info_row h3 {
+  color: #283f70;
+}
+.info p {
+  color: #1e58d4;
+  text-align: left;
+  width: 10%;
+}
+.weather_info_row .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  width: 90%;
+  margin: 10px auto 0;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  overflow: hidden;
+}
+.back_btn {
+  color: #283f70;
+
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(26, 41, 128, 0.2) 0%,
+    rgba(0, 255, 251, 0.2) 51%,
+    rgba(26, 41, 128, 0.2) 100%
+  );
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+  display: block;
+  margin-top: 15px;
+  box-shadow: 0 10px 45px rgba(31, 31, 31, 0.3);
+  border: 1px solid rgba(211, 254, 255, 0.8);
+  border-right: 1px solid rgba(102, 0, 105, 0.123);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+}
+.back_btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

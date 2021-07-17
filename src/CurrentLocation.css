@@ -1,0 +1,139 @@
+* {
+  text-transform: capitalize;
+}
+.current_location_page {
+  position: absolute;
+  top: 55px;
+  right: -800%;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  color: #ffff;
+}
+
+.current_Page_MoveLeft {
+  right: 0.4%;
+}
+.current_location_page .section_2_container {
+  width: 60%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.current_location_page .row {
+  display: block;
+  width: 100%;
+}
+.current_report {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  padding: 25px 0px;
+  width: 100%;
+  margin: 0 auto;
+}
+.current_report img {
+  width: 120px;
+}
+
+.current_report h1 {
+  color: #283f70;
+  font-size: 2.5rem;
+}
+.current_report h1 span {
+  font-size: 1.5rem;
+}
+
+.current_report h2 {
+  margin-top: 10px;
+  color: #1e58d4;
+  font-weight: normal;
+}
+.current_report h3 {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: #283f70;
+}
+.search_section form .search_city_btn,
+.current_report .get_location_btn {
+  width: 90%;
+  background-image: linear-gradient(
+    to right,
+    rgba(26, 41, 128, 0.2) 0%,
+    rgba(0, 255, 251, 0.2) 51%,
+    rgba(26, 41, 128, 0.2) 100%
+  );
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #283f70;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  box-shadow: 0 1px 45px rgba(31, 31, 31, 0.1);
+  border: 1px solid rgba(211, 254, 255, 0.8);
+  border-right: 1px solid rgba(102, 0, 105, 0.123);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  cursor: pointer;
+}
+
+.get_location_btn:hover,
+.search_section form .search_city_btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* search_section */
+.search_section {
+  margin: 0 auto 20px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(225, 225, 225, 0.8);
+  border-right: 1px solid rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  padding: 8px 0px;
+  width: 100%;
+}
+.search_section form {
+  display: block;
+  width: 100%;
+}
+.search_section form .search_city {
+  padding: 12px 20px;
+  width: 90%;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  margin-bottom: 10px;
+  color: #283f70;
+  box-shadow: 0 5px 45px rgba(31, 31, 31, 0.3);
+  border: 1px solid rgba(211, 254, 255, 0.8);
+  border-right: 1px solid rgba(102, 0, 105, 0.123);
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+  background: rgba(225, 225, 225, 0.8);
+  outline: none;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.search_section form .search_city_btn {
+  margin-top: 0;
+}
+
+
+
