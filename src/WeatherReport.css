@@ -2,10 +2,10 @@
 
 .weather_report {
   position: absolute;
-  top: 80px;
+  top: 78px;
   right: -300%;
   width: 60%;
-  transform: translate(-50%, 0%);
+  transform: translate(-30%, 0%);
   transition: 0.5s all ease-in-out;
   z-index: 55;
   text-align: center;
@@ -132,4 +132,74 @@
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .weather_report {
+    width: 70%;
+    top: 65px;
+    transform: translate(-20%, 0%);
+  }
+  .city_name {
+    font-size: 1.9rem !important;
+    margin: 1px 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .weather_report {
+    width: 80%;
+    top: 55px;
+    transform: translate(-10%, 0%);
+  }
+  .weather_report h1 {
+    padding: 0;
+    color: #283f70;
+    font-size: 1.5rem;
+  }
+  .weather_info_row .info {
+    margin-top: 5px;
+    margin: 5px auto 0;
+  }
+  .weather_info_row img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .weather_report {
+    width: 90%;
+    transform: translate(0%, 0%);
+  }
+  .city_name {
+    color: #283f70;
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .weather_report {
+    width: 95%;
+  }
+  .weather_info_row .info {
+    margin: 8px auto 0;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .weather_report {
+    width: 96%;
+    transform: translate(2%, 0%);
+  }
+
+  .weather_info_row .info {
+    width: 95%;
+  }
+  .weather_info_row img {
+    margin: 0 20px;
+  }
+  .info p {
+    text-align: left;
+    width: 100%;
+  }
 }

@@ -135,5 +135,64 @@
   margin-top: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .current_location_page .section_2_container {
+    width: 70%;
+  }
 
+  .current_report img {
+    width: 120px;
+  }
+  .current_report h1 {
+    font-size: 1.9rem;
+  }
+  .current_report h2 {
+    margin: 5px 0;
+    font-size: 1.3rem;
+  }
+  .current_report h3 {
+    margin-top: 0;
+    font-size: 1.9rem;
+  }
+  .current_location_page .section_2_container {
+    width: 85%;
+  }
+}
 
+@media screen and (max-width: 786px) {
+  .current_location_page {
+    top: 45px;
+  }
+  .current_report {
+    padding-top: 5px;
+  }
+
+  .current_report img {
+    width: 90px;
+  }
+  .current_report h1 {
+    font-size: 1.8rem;
+  }
+  .current_report h2 {
+    margin: 5px 0;
+    font-size: 1.3rem;
+  }
+  .current_report h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+  .current_location_page .section_2_container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .current_location_page .section_2_container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .current_location_page .section_2_container {
+    width: 100%;
+  }
+}

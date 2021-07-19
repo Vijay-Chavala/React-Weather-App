@@ -27,7 +27,11 @@ function CurrentLocation({ page2, setPage2 }) {
     setLongitude(longitudeValue);
   };
   const getCoords = () => {
-    window.navigator.geolocation.getCurrentPosition(savePositionToState);
+    window.navigator.geolocation.getCurrentPosition(savePositionToState, () => {
+      alert(
+        "You have blocked us to know your location!! Please allow weather app to access your location to get current weather update"
+      );
+    });
   };
 
   //fetching data from openweather app using axios
@@ -48,6 +52,7 @@ function CurrentLocation({ page2, setPage2 }) {
       const data = { name, temp, description, icon, main };
       setCurrentData(data);
     } catch (err) {
+      console.log(err.response.data);
       if (err.response.data.cod === 429) {
         setErrMsg("Please try after some time");
       }
@@ -84,7 +89,7 @@ function CurrentLocation({ page2, setPage2 }) {
         main: { temp, humidity, pressure },
         weather: [{ main, description, icon }],
         wind: { speed },
-        sys: { sunrise,sunset },
+        sys: { sunrise, sunset },
       } = cityResponse.data;
       //reformating structured data to data variable
       const cityData = {

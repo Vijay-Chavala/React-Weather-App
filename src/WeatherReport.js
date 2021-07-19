@@ -55,18 +55,12 @@ function WeatherReport({
               />
 
               <p>{isDay ? "sunset" : "sunrise"}</p>
-              <p>
-                {getTime(isDay ? sunset : sunrise)}
-                <span style={{ textTransform: "lowercase" }}>
-                  {" "}
-                  {isDay ? "pm" : "am"}
-                </span>
-              </p>
+              <p>{getTime(isDay ? sunset : sunrise)}</p>
             </div>
             <div className="info">
               <img src="images/wind.png" alt="wind" />
 
-              <p>wind speed</p>
+              <p>wind</p>
               <p>{speed}</p>
             </div>
           </div>
