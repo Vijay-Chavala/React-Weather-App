@@ -52,7 +52,6 @@ function CurrentLocation({ page2, setPage2 }) {
       const data = { name, temp, description, icon, main };
       setCurrentData(data);
     } catch (err) {
-      console.log(err.response.data);
       if (err.response.data.cod === 429) {
         setErrMsg("Please try after some time");
       }
