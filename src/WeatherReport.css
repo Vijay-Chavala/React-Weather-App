@@ -140,9 +140,25 @@
     top: 65px;
     transform: translate(-20%, 0%);
   }
+  .weather_report h1 {
+    font-size: 1.5rem !important;
+  }
   .city_name {
-    font-size: 1.9rem !important;
+    font-size: 1.5rem !important;
     margin: 1px 0;
+  }
+
+  .weather_info_row .info {
+    margin-top: 5px;
+    margin: 5px auto 0;
+  }
+  .weather_info_row img {
+    width: 30px;
+    height: 30px;
+  }
+  .back_btn {
+    margin-top: 8px;
+    padding: 8px;
   }
 }
 

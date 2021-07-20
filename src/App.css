@@ -13,7 +13,7 @@ section {
   display: grid;
   place-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -226,9 +226,10 @@ section {
 }
 @media screen and (max-width: 1000px) {
   section {
-    height: 100%;
+    height: 100vh;
     position: relative;
     overflow-x: hidden;
+    overflow-y: auto;
   }
   .container {
     height: 90%;
@@ -239,6 +240,9 @@ section {
   }
 }
 @media screen and (max-width: 800px) {
+  .container {
+    height: auto;
+  }
   .sun {
     width: 160px;
     height: 160px;
@@ -268,9 +272,6 @@ section {
   .cloud3 {
     display: none;
   }
-  .container {
-    width: 80%;
-  }
   .welcome_page {
     width: 80%;
   }
@@ -279,7 +280,6 @@ section {
   .container {
     background: rgba(225, 255, 225, 0.1);
     width: 95%;
-    height: 90vh;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     padding-bottom: 40px;
